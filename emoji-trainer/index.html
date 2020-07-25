@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emoji Trainer</title>
+
+    <!-- CDN 
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+    -->
+
+    <!-- LOCAL -->
+    <script src="./assets/tfjs.js"></script>
+    <script src="./assets/mobilenet.js"></script>
+    <script src="./assets/knn-classifier.js"></script>
+    <link href="./assets/paper.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <h2>Emoji Trainer</h2>
+    <section class="video">
+      <!-- Run & Results -->
+      <video autoplay id="webcam" width="400px" height="400px"></video>
+
+      <!-- Run & Results -->
+
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-text" id="output-result">?</h1>
+          <button id="run-button">Run</button>
+        </div>
+      </div>
+    </section>
+    <section class="samples">
+      <div class="row">
+        <!-- First Example -->
+        <div class="form-group">
+          <input type="text" id="sample-1-input" value="👍" />
+          <button class="btn-small" id="sample-1-btn">Record</button>
+          <span class="info-text" id="sample-1-text"></span>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Second Example -->
+        <div class="form-group">
+          <input type="text" id="sample-2-input" value="❤️" />
+          <button class="btn-small" id="sample-2-btn">Record</button>
+          <span class="info-text" id="sample-2-text"></span>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Third Example -->
+        <div class="form-group">
+          <input type="text" id="sample-3-input" value="👌" />
+          <button class="btn-small" id="sample-3-btn">Record</button>
+          <span class="info-text" id="sample-3-text"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- APP -->
+    <script src="start.js"></script>
+  </body>
+</html>

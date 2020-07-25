@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Image Classification</title>
+    <meta charset="UTF-8" />
+
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+    <script src="utils.js"></script>
+    <script src="start.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <video id="video" width="600px" height="400px">
+        Video stream not available.
+      </video>
+      <div class="overlay">
+        <pre id="predictions"></pre>
+      </div>
+    </div>
+  </body>
+</html>

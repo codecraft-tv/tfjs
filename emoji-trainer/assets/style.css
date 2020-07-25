@@ -1,0 +1,28 @@
+body {
+    margin: 1em auto;
+    width: 400px;
+    text-align: center;
+}
+
+body h2 {
+    margin-bottom: 0px;
+    ;
+}
+
+.info-text {
+    width: 50px;
+    display: inline-block;
+}
+
+.form-group input {
+    display: inline-block;
+}
+
+.form-group {
+    width: 300px;
+    margin: auto;
+}
+
+.samples {
+    margin-top: 50px;
+}
