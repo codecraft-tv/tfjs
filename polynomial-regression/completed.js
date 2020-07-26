@@ -22,7 +22,6 @@ let Ys = []
 let A = -0.4;
 let B = 1;
 let C = 0.5;
-const getY = x => A * (x * x) + B * x + C;
 
 // Create tensor variables to store the weights of A, B and C
 const a = tf.variable(tf.scalar(Math.random()));
@@ -55,11 +54,11 @@ function loss(predictedYs, actualYs) {
 }
 
 // Pass in the actualXs and the actualYs (from the mouse clicks)
-// use the actualXs to calculate the prdictedYs
+// use the actualXs to calculate the predictedYs
 // pass predictedYs and actualYs to the optimiser and try to minimise that value
-async function train(numIterations = 1) {
+async function train() {
   if (Xs.length) {
-    for (CURRENT_EPOCH = 0; CURRENT_EPOCH < numIterations; CURRENT_EPOCH++) {
+    for (CURRENT_EPOCH = 0; CURRENT_EPOCH < MAX_EPOCHS; CURRENT_EPOCH++) {
       tf.tidy(() => {
         const actualXs = tf.tensor(Xs, [Xs.length, 1]);
         const actualYs = tf.tensor(Ys, [Ys.length, 1]);
