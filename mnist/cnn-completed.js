@@ -34,9 +34,6 @@ async function loadData() {
 /**
  * Create a Convolutional Neural Network
  */
-/**
- * Create a Convolutional Neural Network
- */
 function createConvModel() {
     // Create a sequential neural network model. tf.sequential provides an API
     // for creating "stacked" models where the output from one layer is used as
